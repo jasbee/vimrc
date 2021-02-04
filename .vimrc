@@ -4,6 +4,9 @@ set nocompatible
 "Adds line numbers
 set number
 
+"Shows current command while typing 
+set showcmd
+
 "For python to standardize with pep-8 tabs
 set expandtab
 set tabstop=4
@@ -15,3 +18,13 @@ syntax on
 
 "Allows plugins to load properly
 filetype plugin on
+
+"Adds the solarized dark colorscheme
+"Download the soloarized colorscheme from git
+"git clone https://github.com/altercation/vim-colors-solarized.git
+"while in your home directory make this directory 'mkdir .vim/colors/'
+"Copy the vim colorscheme to this folder
+set t_Co=256
+let g:solarized_termcolors=256
+set background=dark
+colorscheme solarized
