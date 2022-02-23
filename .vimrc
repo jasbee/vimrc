@@ -1,6 +1,6 @@
 "Steps to install on linux:
-"1)In your home dir `https://github.com/jasbee/vimrc.git`
-"2)`ln -s vimrc/.vimrc .vimrc`
+"1)In your home dir `git clone https://github.com/jasbee/vimrc.git`
+"2)While still in home `ln -s vimrc/.vimrc .vimrc`
 "3)Start vim
 
 "To update vimrc for all users append these commands to the end of /etc/vimrc
