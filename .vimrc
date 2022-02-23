@@ -1,3 +1,8 @@
+"Steps to install on linux:
+"1)In your home dir `https://github.com/jasbee/vimrc.git`
+"2)`ln -s vimrc/.vimrc .vimrc`
+"3)Start vim
+
 "To update vimrc for all users append these commands to the end of /etc/vimrc
 "To update for root add symbolic links with 'ln -s' from root's home to this
 "file and to the color folder
