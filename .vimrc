@@ -31,6 +31,10 @@ call plug#end()
 "Allows for ctrl + q to open NERDTree
 nmap <C-q> :NERDTreeToggle<CR>
 
+if v:version < 802
+    silent !stty -ixon > /dev/null 2>/dev/null
+endif
+
 
 "Tells git not to worry about being compatible with vi
 set nocompatible
