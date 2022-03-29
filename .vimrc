@@ -31,6 +31,7 @@ call plug#end()
 "Allows for ctrl + q to open NERDTree
 nmap <C-q> :NERDTreeToggle<CR>
 
+"Allows for ctrl + q on older versions of vim
 if v:version < 802
     silent !stty -ixon > /dev/null 2>/dev/null
 endif
