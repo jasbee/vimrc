@@ -64,6 +64,10 @@ set shiftwidth=4
 "syntax on
 
 
+"Add end of line extra space highlighting
+highlight ExtraWhitespace ctermbg=blue guibg=blue
+match ExtraWhitespace /\s\+$/
+
 "Allows plugins to load properly
 filetype plugin on
 
