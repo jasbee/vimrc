@@ -37,6 +37,8 @@ if v:version < 802
     silent !stty -ixon > /dev/null 2>/dev/null
 endif
 
+"Makes backspace work like other stuff
+set backspace=indent,eol,start
 
 "Tells git not to worry about being compatible with vi
 set nocompatible
