@@ -25,12 +25,15 @@ call plug#begin()
 Plug 'scrooloose/nerdtree'
 Plug 'altercation/vim-colors-solarized'
 Plug 'rodjek/vim-puppet'
+Plug 'yggdroot/indentline'
 call plug#end()
 
 "Adding in keymaps
 "-----------------
 "Allows for ctrl + q to open NERDTree
 nmap <C-q> :NERDTreeToggle<CR>
+nmap <C-y> :LeadingSpaceToggle<CR>
+nmap <C-e> :IndentLinesToggle<CR>
 
 "Allows for ctrl + q on older versions of vim
 if v:version < 802
@@ -48,13 +51,12 @@ set nocompatible
 set number
 
 
-"Shows current command while typing 
+"Shows current command while typing
 set showcmd
 
 
 "Tells vim to wrap at the end of a line not in the middle of a word
 set linebreak
-
 
 "For python to standardize with pep-8 tabs
 set expandtab
@@ -66,10 +68,13 @@ set shiftwidth=4
 "Uncomment to adds syntax highlighting. Handeled by vim-plug by default.
 "syntax on
 
-
 "Add end of line extra space highlighting
 highlight ExtraWhitespace ctermbg=blue guibg=blue
 match ExtraWhitespace /\s\+$/
+
+"edit the indentLine character and leading space character to look a bit nicer
+let g:indentLine_char = '┊'
+let g:indentLine_leadingSpaceChar = '·'
 
 "Allows plugins to load properly
 filetype plugin on
