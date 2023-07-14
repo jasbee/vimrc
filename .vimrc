@@ -46,14 +46,14 @@ set backspace=indent,eol,start
 "Tells git not to worry about being compatible with vi
 set nocompatible
 
-
 "Adds line numbers
 set number
-
 
 "Shows current command while typing
 set showcmd
 
+"Turn mouse scrolling on
+set mouse=a
 
 "Tells vim to wrap at the end of a line not in the middle of a word
 set linebreak
